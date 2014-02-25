@@ -1,6 +1,6 @@
 Project2::Application.routes.draw do
 
-  get "static_pages/home"
+  root  'static_pages#home'
   
   match '/faq',    to: 'static_pages#faq',    via: 'get'
   match '/about',   to: 'static_pages#about',   via: 'get'
